@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +11,7 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navbar__brand {
-    width: 100px;
-}
-
-.navbar__logo {
-    width: 100%;
-}
-
-.nav__item {
+.button__primary {
     background-image: linear-gradient(
     to right,
     #ff512f 0%,
@@ -35,4 +23,74 @@ body {
   outline: none;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* *********************************************************** */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.navbar__brand {
+    width: 100px;
+}
+
+.navbar__logo {
+    width: 100%;
+}
+
+.hero__container {
+    width: 100%;
+}
+.hero__description {
+    text-align: center;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+
+/* it is alredy fit for mobile deices 
+ for tablets */
+@media (min-width: 768px) {
+
+}
+/* for laptops */
+@media (min-width: 1020px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+    .navbar__brand {
+        width: 170px;
+    }
+    .button__primary {
+        padding: 20px 24px;
+    }
+    .hero__container {
+        padding: 100px 0px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hero__image__container{
+        max-width: 700px;
+    }
+    
+}
+/* for desktop */
+@media (min-width: 1400px) {
+    
 }
