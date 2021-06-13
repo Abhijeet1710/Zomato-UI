@@ -71,7 +71,8 @@ body {
 
 /* Explore Menu0 */
 
-.explore__menu__text {
+.explore__menu__text, 
+.restaurant__text {
     text-align: center;
     font-size: 30px;
     color: #1d3557;
@@ -96,7 +97,49 @@ body {
     display: flex;
     justify-content: center;
 }
-
+/* Restaurents List */
+.restaurant__text {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .restaurant__images__container {
+    width: 100%;
+  }
+  
+  .restaurant__images__row__one,
+  .restaurant__images__row__two {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .restaurant__images__row__one {
+    align-items: baseline;
+    margin-bottom: 3px;
+  }
+  
+  .restaurant__image__1,
+  .restaurant__image__4 {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .restaurant__image__2,
+  .restaurant__image__3 {
+    width: 120%;
+    height: 180px;
+  }
+  
+  .restaurant__1,
+  .restaurant__2,
+  .restaurant__3,
+  .restaurant__4 {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+  }
 /* it is alredy fit for mobile deices 
  for tablets */
 @media (min-width: 768px) {
@@ -174,7 +217,30 @@ body {
         margin-top: -10px;
         margin-bottom: 40px;
     }
+    .restaurant__container {
+        display: flex;
+        margin-bottom: 50px;
+        align-items: center;
+
+    }
+    .restaurant__text {
+        font-size: 50px;
+        width: 100%;
+    }
+    .restaurant__images__container {
+        width: 120%;
+    }
+    .restaurant__image__1,
+    .restaurant__image__4 {
+      width: 100%;
+      height: 150px;
+    }
     
+    .restaurant__image__2,
+    .restaurant__image__3 {
+      width: 120%;
+      height: 200px;
+    }
 }
 /* for desktop */
 @media (min-width: 1400px) {
