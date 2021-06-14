@@ -35,6 +35,7 @@ body {
     padding: 0 15px;
 }
 
+
 /* *********************************************************** */
 
 .navbar {
@@ -54,9 +55,31 @@ body {
 .hero__container {
     width: 100%;
     margin-bottom: 40px;
+    position: relative;
+}
+.hero__image__container {
+    position: relative;
 }
 .hero__description {
     text-align: center;
+}
+.hero__image__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110%;
+    z-index: -3;
+}
+
+.hero__image {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px rgb(149, 149, 149);
 }
 
 .hero__text {
@@ -65,14 +88,11 @@ body {
     margin: 20px 0px;
 }
 
-.hero__image {
-    width: 100%;
-}
-
 /* Explore Menu0 */
 
 .explore__menu__text, 
-.restaurant__text {
+.restaurant__text,
+.stay__updated__text {
     text-align: center;
     font-size: 30px;
     color: #1d3557;
@@ -123,13 +143,13 @@ body {
   .restaurant__image__1,
   .restaurant__image__4 {
     width: 100%;
-    height: 150px;
+    height: 130px;
   }
   
   .restaurant__image__2,
   .restaurant__image__3 {
     width: 120%;
-    height: 180px;
+    height: 160px;
   }
   
   .restaurant__1,
@@ -140,8 +160,77 @@ body {
     width: 100%;
     height: 100%;
   }
-/* it is alredy fit for mobile deices 
- for tablets */
+  .form__container {
+      width: 100%;
+      margin-top: 40px;
+     text-align: center; 
+     margin-bottom: 50px;
+  }
+
+  .form__input__email{
+      width: 60%;
+      padding: 5px 10px;
+      outline: none;
+      border: 1px solid palevioletred;
+      border-radius: 4px;
+  }
+
+  .slogan__container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #1d3557;
+
+  } 
+  .slogan__image {
+      width: 100%;
+      height: 100%;
+    border-radius: 10px;
+    opacity: 0.8;
+
+  }
+
+  .slogan__text {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      color: #FFF;   
+    }
+
+    .footer__container {
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+          );
+        color: #FFF;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .footer__brand {
+        width: 100%;
+        text-align: center;
+    }
+    .footer__logo {
+        width: 200px;
+    }
+    .footer__text{
+        width: 100%;
+        text-align: center;
+    }
+    .footer__text h4 {
+        cursor: pointer;
+    }
+  /* it is alredy fit for mobile deices 
+ for tablets */ 
 @media (min-width: 768px) {
 
 }
@@ -162,10 +251,10 @@ body {
     }
     .hero__container {
         margin-top: 20px;
+        margin-bottom: 100px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        margin-bottom: 100px;
     }
     .hero__image__container{
         width: 100%;
@@ -191,8 +280,13 @@ body {
     }
     .explore__menu__container {
         position: relative;
-        padding: 20PX 0;
-        margin-bottom: 100PX;
+        padding: 30PX 0;
+        margin-bottom: 100px;
+
+    }
+    .food__menu__card {
+        width: 100%;
+        margin: 0px 0px;
     }
     .explore__menu__bg {
         background-image: linear-gradient(
@@ -219,7 +313,7 @@ body {
     }
     .restaurant__container {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         align-items: center;
 
     }
@@ -233,13 +327,45 @@ body {
     .restaurant__image__1,
     .restaurant__image__4 {
       width: 100%;
-      height: 150px;
+      height: 170px;
     }
     
     .restaurant__image__2,
     .restaurant__image__3 {
       width: 120%;
-      height: 200px;
+      height: 220px;
+    }
+    .form__container {
+        margin-bottom: 100px;
+    }
+    .form__input__email{
+        padding: 12px 20px;
+        width: 50%;
+    }
+    .slogan__container{
+        height: 300px;
+        margin-bottom: 100px;
+
+    }
+    .slogan__text{
+        padding: 0 20px;
+        font-size: 30px;
+        top: 100px;
+    }
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 60px 0;
+    }
+    .footer__brand{
+        width: 150%;
+    }
+    .footer__text{
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 /* for desktop */
